@@ -21,6 +21,6 @@ router.post("/splits-payment/compute", (req, res)=>{
 })
 
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log('Server listening in on port 3000...')
 })
