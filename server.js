@@ -10,7 +10,7 @@ app.use('/', router)
 const computeData = require('./computeData')
 
 router.get('/', (req, res)=>{
-    res.send("Stuff")
+    res.send("Application Started")
 })
 
 router.post("/splits-payment/compute", (req, res)=>{
