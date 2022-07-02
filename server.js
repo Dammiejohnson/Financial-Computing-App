@@ -13,7 +13,7 @@ router.get('/', (req, res)=>{
     res.send("Application Started")
 })
 
-router.post("/splits-payment/compute", (req, res)=>{
+router.post("/split-payments/compute", (req, res)=>{
 
     const {ID, Amount, SplitInfo} = req.body
     const result = computeData({ID, Amount, SplitInfo})
